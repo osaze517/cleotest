@@ -1,0 +1,538 @@
+
+.App {
+  background-color: white;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'KarmaSuture'!important;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.modal-content {
+  color:#d4AF37;
+  opacity:72%;
+  background-color: black!important;
+  
+}
+
+.btn-close {
+  background-color: red!important;
+}
+
+
+
+
+@font-face{
+  font-family: 'KarmaSuture';
+  src:url('KarmaSuture.ttf')
+
+}
+
+
+.section{
+  height: auto;
+  width: 100vw;
+  display: flex;
+}
+.section .bg{
+  
+  background: url('./images/egyptian.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 107vh;
+ }
+ .section .bg2{
+  background-attachment: fixed;
+  background: url('./images/scripture.jpg') no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+ }
+
+
+
+nav {
+  display: flex;
+  background-color: #d4AF37;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90px;
+  width: 100vw;
+  top:0;
+  position: fixed;
+  color:white;
+  z-index: 1;
+}
+ul img{
+  height:15px;
+  width: 15px;
+  margin-right: 10px;
+}
+.nav li a{
+  opacity:0;
+  color:white;
+  text-decoration: none;
+  font-family: 'KarmaSuture';
+  font-weight: 800;
+  margin-left:20px;
+  margin-right:20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  animation: fadeIn 1.6s 1;
+  animation-fill-mode: forwards;
+  font-size: 23px;
+  padding:8px;
+
+
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 2.0;
+  }
+}
+.fade-in{
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+  
+
+li{
+  color:white;
+  list-style-type: none;
+}
+
+
+
+
+.option:hover {
+  color: black;
+  font-size: x-large;
+  margin-left: 0px;
+  
+}
+.buttonslide{
+  
+  transition: ease-out 0.4s;
+}
+
+
+.navlogo{
+  height: 70px;
+  width: 70px;
+
+}
+  
+  
+.logo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color:black;
+  font-size: 2rem;
+}
+
+
+
+.mobile-menu {
+  display: none;
+}
+.mobile-option {
+  display: none;
+}
+
+.nav-options {
+  display:flex;
+  margin-bottom: 0px;
+
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  margin:98px 200px;
+
+}
+
+
+.scrollsection{
+  display: flex;
+  opacity: 80%;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+.ss{
+  background-color: #d4AF37;
+  flex-direction: column;
+  margin:10px;
+  border-radius: 8%;
+  text-align: center;
+}
+.ss h5{
+  font-size: 17px;
+}
+.ss h3{
+  font-size: 22px;
+}
+.ss h4{
+  margin-top: 5px;
+  font-size: 17px;
+}
+
+
+
+.scroll{
+  height: 40px;
+
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  opacity: 80%;
+  justify-content: center;
+  margin-top:100px;
+  margin-left:250px;
+  margin-right:250px;
+  padding:10px;
+
+
+}
+.intro h4{
+  font-size: 20px;
+  color: #d4AF37;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+
+
+}
+.btn{
+  border: solid 3px #d4AF37!important;
+  background-color: transparent!important;
+  color: #d4af37 !important;;
+  padding: 8px!important;
+  font-size: 25px!important;
+  margin-bottom: 5px!important;
+
+}
+
+.btn2{
+  border: solid 3px red;
+  background-color: red;
+  color:#d4AF37;
+  padding: 8px;
+  font-size: 15px;
+}
+.stats{
+  text-align: left;
+}
+.home p{
+  font-size: 12px;
+}
+h4 span{
+  color: red;
+}
+
+
+.box{
+  border:4px solid black;
+  height:100px;
+  width:auto;
+  margin-bottom:11px;
+}
+
+#codesubmission{
+  background-color: black;
+  opacity: 80%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.lboard h1{
+  color:red;
+  text-align: center;
+}
+.lboard{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: auto;
+  padding:20px;
+}
+#codeform{
+  text-align: center;
+  color:#d4AF37;
+  margin:15px;
+  padding: 15px;
+}
+
+
+table{
+  border: 5px #d4AF37 dashed;
+  padding:20px;
+}
+
+.img{
+  height: 150px;
+  width: 150px;
+  border-radius: 10%;
+}
+table td{
+  font-size: 20px;
+  font-style: bold;
+  color: white;
+}
+table th{
+  font-size: 20px;
+  font-style: bold;
+  color:red;
+}
+
+.nftAttr{
+  color:white;
+}
+#products{
+  margin-top: 100px;
+  justify-content: center;
+  display:flex;
+  background-color: black;
+  opacity: 80%;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+#products h1{
+  color:#d4AF37;
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  #popover-basic{
+    position: fixed;
+    z-index: 1000;
+  }
+  .section{
+    height: auto;
+    width: 100vw;
+  }
+
+
+  .section .bg{
+    opacity: .9;
+    background-attachment:inherit;
+    height:auto;
+  }
+  .intro{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+  }
+  .intro h4{
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .main{
+    margin: 0px;
+    margin-top: 90px;
+  }
+  .btn{
+    padding: 4px;
+    font-size: 13px!important;
+    margin: 4px;
+    cursor:pointer;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px;
+    height: 80px;
+    top:0;
+    z-index: 99;
+    position: fixed;
+    width: 100vw;
+  }
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+
+
+  h1 span {
+    font-size: 32px;
+  }
+  .nav-options {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    list-style-type: none;
+    grid-gap: 0px;
+  }
+  .nav-options.active {
+    background: black;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    align-content: center;
+    padding-bottom:10px;
+    padding-left: 0;
+  }
+  
+  .menu-icon1 {
+    width: 28px;
+    height: 28px;
+    margin-left:40px;
+    justify-content: flex-end;
+
+  }
+  .menu-icon2 {
+    width: 35px;
+    height: 35px;
+    margin-left:30px;
+  }
+
+  .mobile-menu {
+    display: flex;
+  
+  }
+
+  .mobile-option {
+    display:block;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    font-size: 26px;
+  }
+  
+  .navlogo{
+    height: 50px;
+    width: 50px;
+    margin-left: 7px;
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  li a{
+    color:white;
+    text-decoration: none;
+    font-family: KarmaSuture;
+    font-weight: 800;
+  
+  }
+
+  
+
+  
+  .btnidk {
+    background-color: white;
+    color:#5200ff;
+    border: solid 8px #5200ff;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    
+  }
+  .scroll{
+    height:auto;
+  }
+  .scrollsection h2{
+    font-size: 8px;
+  }
+  .scrollsection{
+    display: flex;
+    opacity: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    margin-left: 0px;
+
+    
+  }
+  .ss{
+    height:auto;
+    width: 75vw;
+    
+
+  }
+  .ss h3{
+    font-size: 17px;
+  }
+  #codesubmission{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .lboard{
+    padding:0px;
+  }
+  .img{
+    height:100px;
+    width: 100px;
+  }
+  .nftAttr{
+    font-size: 14px;
+  }
+  #products{
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100vh;
+  }
+ 
+
+
+
+}
